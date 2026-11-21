@@ -1,0 +1,9 @@
+{
+  "n_xovers": 6405,
+  "xover_dhdt_median": -0.34664494323671136,
+  "xover_dhdt_mean": -0.6323613433221701,
+  "xover_dhdt_mad": 0.4752921428082944,
+  "n_valid": 5563,
+  "fitsec_dhdt_median": -0.2599574330818717,
+  "difference_median": -0.08668751015483966
+}

@@ -1,0 +1,32 @@
+{
+  "atl15_file": "ATL15_A3_0329_01km_005_02.nc",
+  "atl15_group": "dhdt_lag24",
+  "atl15_epoch_year": 2022.5500000000002,
+  "nosso_periodo": [
+    2019,
+    2025
+  ],
+  "n_nos_pareados": 7233,
+  "nosso_dhdt_mediana": -0.28160231800857743,
+  "atl15_dhdt_mediana": -0.32712608924276076,
+  "diferenca_mediana": 0.0442804292572512,
+  "diferenca_media": 0.07183862146742888,
+  "diferenca_rms": 0.2309210942320967,
+  "diferenca_mad": 0.048004842219680405,
+  "correlacao_r": 0.9637208757709372,
+  "regressao_nosso_vs_atl15": {
+    "slope": 0.8847731869205857,
+    "intercept": -0.001053250513998976
+  },
+  "z_mediano_abs": null,
+  "frac_dentro_2sigma": null,
+  "atl15_winter_only_mediana": -0.2820826939173977,
+  "vies_sazonal_JJA_sobre_anual": 0.8623057077788244,
+  "nota_dhdt_lag24": "NAO utilizado: difere de (h[k+24]-h[k])/6anos derivado de delta_h do mesmo arquivo por fator exatamente 3 (correlacao 1.0000). A convencao de lag foi confirmada em dhdt_lag8. Sem definicao verificavel, o campo nao serve de referencia.",
+  "diferencas_metodologicas_declaradas": [
+    "janela sazonal: nosso = DJF apenas; ATL15 = ano inteiro",
+    "máscara: nosso = gelo aterrado + buffers; ATL15 = todo gelo",
+    "correções: nosso aplica CATS2008 e slope por REMA; ATL15 usa tratamento próprio",
+    "janela temporal: ATL15 dhdt_lag24 (lag em trimestres) centrado em 2022.55"
+  ]
+}

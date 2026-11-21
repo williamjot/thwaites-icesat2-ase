@@ -1,0 +1,15 @@
+{
+  "n_nodes": 7231,
+  "n_accel_supported": 31,
+  "frac_supported": 0.0042870972203014794,
+  "accel_median_supported": 0.45433816750991407,
+  "dhdt_median": -0.30457755851176416,
+  "top_rejection_reasons": {
+    "resíduo autocorrelacionado (ac1=0.52)": 127,
+    "resíduo autocorrelacionado (ac1=0.61)": 127,
+    "resíduo autocorrelacionado (ac1=0.65)": 123,
+    "resíduo autocorrelacionado (ac1=0.55)": 119,
+    "resíduo autocorrelacionado (ac1=0.68)": 119,
+    "resíduo autocorrelacionado (ac1=0.70)": 119
+  }
+}

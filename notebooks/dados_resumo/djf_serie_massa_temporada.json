@@ -1,0 +1,135 @@
+{
+  "estacao": "djf",
+  "season": "DJF",
+  "correcao": "temporada como unidade; DJF = dez(Y) + jan/fev(Y+1), rotulada pelo ano final; conversao por ano juliano ATLAS",
+  "n_nos_completos": 6761,
+  "area_km2": 169025.0,
+  "densidade_gelo": 917.0,
+  "span_epocas_anos": 6.880033446868538,
+  "taxa_Gt_por_ano_ajuste_linear": -89.60283680232688,
+  "serie": [
+    {
+      "temporada": 2019,
+      "rotulo": "DJF 2018/2019",
+      "epoca_media": 2019.073082065165,
+      "dh_medio_m": 0.0,
+      "dh_mediano_m": 0.0,
+      "mwe": 0.0,
+      "massa_acumulada_Gt": 0.0,
+      "n_nos": 6761
+    },
+    {
+      "temporada": 2020,
+      "rotulo": "DJF 2019/2020",
+      "epoca_media": 2020.030895145925,
+      "dh_medio_m": -0.15231682553040665,
+      "dh_mediano_m": -0.004966709762811661,
+      "mwe": -0.13967452901138291,
+      "massa_acumulada_Gt": -23.608487266148995,
+      "n_nos": 6761
+    },
+    {
+      "temporada": 2021,
+      "rotulo": "DJF 2020/2021",
+      "epoca_media": 2021.0239836180647,
+      "dh_medio_m": -0.5224421388732226,
+      "dh_mediano_m": -0.16736562550067902,
+      "mwe": -0.47907944134674507,
+      "massa_acumulada_Gt": -80.97640257363359,
+      "n_nos": 6761
+    },
+    {
+      "temporada": 2022,
+      "rotulo": "DJF 2021/2022",
+      "epoca_media": 2022.0212534311418,
+      "dh_medio_m": -1.4183164726157327,
+      "dh_mediano_m": -0.5957011356949806,
+      "mwe": -1.3005962053886269,
+      "massa_acumulada_Gt": -219.83327361581266,
+      "n_nos": 6761
+    },
+    {
+      "temporada": 2023,
+      "rotulo": "DJF 2022/2023",
+      "epoca_media": 2023.0233467265423,
+      "dh_medio_m": -2.022037474493278,
+      "dh_mediano_m": -0.9597225487232208,
+      "mwe": -1.8542083641103362,
+      "massa_acumulada_Gt": -313.40756874374955,
+      "n_nos": 6761
+    },
+    {
+      "temporada": 2024,
+      "rotulo": "DJF 2023/2024",
+      "epoca_media": 2024.0413587449054,
+      "dh_medio_m": -2.7039066795409914,
+      "dh_mediano_m": -1.3677015602588654,
+      "mwe": -2.4794824251390892,
+      "massa_acumulada_Gt": -419.0945169091345,
+      "n_nos": 6761
+    },
+    {
+      "temporada": 2025,
+      "rotulo": "DJF 2024/2025",
+      "epoca_media": 2025.050813485239,
+      "dh_medio_m": -3.3342969952067065,
+      "dh_mediano_m": -1.6657533645629883,
+      "mwe": -3.0575503446045498,
+      "massa_acumulada_Gt": -516.802446996784,
+      "n_nos": 6761
+    },
+    {
+      "temporada": 2026,
+      "rotulo": "DJF 2025/2026",
+      "epoca_media": 2025.9531155120335,
+      "dh_medio_m": -3.578658663576843,
+      "dh_mediano_m": -1.6882602348923683,
+      "mwe": -3.281629994499965,
+      "massa_acumulada_Gt": -554.6775098203566,
+      "n_nos": 6761
+    }
+  ],
+  "cobertura_por_temporada": [
+    {
+      "temporada": 2019,
+      "n_nos": 123,
+      "epoca_media": 2019.073428459633
+    },
+    {
+      "temporada": 2020,
+      "n_nos": 122,
+      "epoca_media": 2020.0296110785991
+    },
+    {
+      "temporada": 2021,
+      "n_nos": 123,
+      "epoca_media": 2021.0228541916476
+    },
+    {
+      "temporada": 2022,
+      "n_nos": 122,
+      "epoca_media": 2022.021321464749
+    },
+    {
+      "temporada": 2023,
+      "n_nos": 122,
+      "epoca_media": 2023.024538045153
+    },
+    {
+      "temporada": 2024,
+      "n_nos": 123,
+      "epoca_media": 2024.0411564090512
+    },
+    {
+      "temporada": 2025,
+      "n_nos": 123,
+      "epoca_media": 2025.052224332557
+    },
+    {
+      "temporada": 2026,
+      "n_nos": 123,
+      "epoca_media": 2025.952991071277
+    }
+  ],
+  "nota": "massa INFERIDA de altura x densidade suposta; anomalia relativa a primeira temporada de cada no; agregacao pela MEDIA"
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "ICESat-2 ATL06 — Geleira Thwaites e Mar de Amundsen (2019–2025)"
+message: "Se utilizar este software ou os métodos estatísticos implementados, cite conforme abaixo."
+type: software
+authors:
+  - given-names: William
+    family-names: Jota
+    affiliation: "Universidade de Brasília (UnB)"
+repository-code: "https://github.com/williamjot/thwaites-icesat2-ase"
+license: MIT
+version: 0.2.0
+date-released: "2026-11-20"
+keywords:
+  - ICESat-2
+  - ATL06
+  - Thwaites Glacier
+  - Amundsen Sea Embayment
+  - basal melt
+  - glacial mass balance
+  - spatial block cross-validation

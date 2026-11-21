@@ -1,0 +1,49 @@
+{
+  "modelo_de_erro": {
+    "sigma_v0_m": 0.13260573364198472,
+    "sigma_horiz_m": 6.186752074005727,
+    "r2": 0.997814934671252,
+    "n_granules": 40,
+    "n_segments": 4347847,
+    "requisito_icesat2_m": 6.5,
+    "concordancia_com_requisito": "6.19 m calibrado vs 6.5 m de requisito"
+  },
+  "referencia_atbd": "ATBD ATL14/ATL15 r005 §3.4.4 — erro de geolocalização sobre superfície inclinada como fonte dominante de erro correlacionado, 'consistent over ... spatial scales of tens of km'",
+  "passagens": {
+    "mediana_por_tile": 93.5,
+    "min": 12,
+    "max": 123,
+    "alavancagem_mediana_ano2": 355.090549975702,
+    "nota": "é o nº de PASSAGENS, não de segmentos, que define a amostra efetiva deste termo — a mediana de 163.178 observações por nó não se traduz em 163.178 amostras independentes do erro de apontamento"
+  },
+  "nos": {
+    "n": 7231,
+    "slope_mediana": 0.008241679519414902,
+    "sigma_geo_altura_mediana_m": 0.14207104544026952,
+    "sigma_dhdt_geo_mediana": 0.007486052091609315,
+    "sigma_dhdt_ajuste_mediana": 0.05720292499853714,
+    "razao_mediana": 0.13538455093361634
+  },
+  "incerteza_de_massa_Gt_ano": {
+    "so_ajuste_branca": 0.2333300902080457,
+    "duas_componentes": 0.3285320518115507,
+    "detalhe_duas_componentes": {
+      "sigma_V_m3_yr": 358268322.5862058,
+      "sigma_dMdt_Gt_yr": 0.3285320518115507,
+      "contrib_branca_Gt_yr": 0.2333300902080457,
+      "contrib_correlacionada_Gt_yr": 0.23127986957582947,
+      "L_branca_m": null,
+      "L_correlacionada_m": 34100.0
+    },
+    "componente_unica_com_L_correlacionado": 2.829992147328335,
+    "nota": "'componente_unica' é o tratamento ANTIGO: aplica o L correlacionado a TODA a variância, inclusive à parte branca. É por isso que ele inflava a barra de erro e a deixava tão sensível à escolha de L.",
+    "ALERTA": "NÃO adotar 'duas_componentes' como nova barra de erro. O valor só vale se a dispersão residual do ajuste for BRANCA na escala da célula, e essa premissa não está verificada — há evidência DIRETA contra ela: (a) o variograma do próprio campo tem alcance de 34-154 km, o que é estrutura espacial, não ruído branco; (b) o run_acceleration rejeitou 99,4% dos nós por resíduo autocorrelado (ac1 = 0,52-0,70), o que é estrutura temporal. Adotar 0,33 Gt/ano subestimaria a incerteza por um fator ~8. O número está aqui para mostrar o TAMANHO do efeito da decomposição, não para substituir a barra de erro."
+  },
+  "conclusao": "A2 NÃO resolve A1, e o motivo é informativo. O ATBD aponta a geolocalização×declividade como fonte DOMINANTE de erro correlacionado, mas na nossa geometria ela responde por apenas 14% do σ do nó: com ~94 passagens por tile e 6,2 anos de alavancagem (Σ(t−t̄)² = 355 ano²), o erro de apontamento por passagem é fortemente promediado. A discrepância com o ATBD é esperada — eles descrevem alturas por ponto de referência do ATL11, geometria diferente da nossa média por nó de 15 km. Consequência: a estrutura espacial de 34-154 km que domina a nossa barra de erro NÃO é de geolocalização. Sobra origem geofísica — variabilidade de firn/SMB ou dinâmica — e é aí que a investigação de A1 deve continuar, não em mais termos instrumentais.",
+  "limitacoes": [
+    "alavancagem temporal calculada por TILE, não por nó (ver docstring)",
+    "σ_horiz é calibrado em 40 grânulos amostrados, não nos 1.106",
+    "a declividade vem do REMA (época ~2015) e não do ATL06; em zonas de mudança rápida de superfície as duas divergem",
+    "o L da componente correlacionada continua sendo escolhido, não medido — o ganho aqui é que ele agora se aplica só à parte do erro que o ATBD atribui a essa escala, não a toda a variância"
+  ]
+}

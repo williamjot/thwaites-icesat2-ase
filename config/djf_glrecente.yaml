@@ -1,0 +1,33 @@
+# Perfil DJF com a faixa da linha de aterramento MEDIDA, em vez do buffer fixo de 5 km a partir
+# da linha estática do BedMachine. Isola tiles, dh/dt, grade e balanço do produto DJF histórico
+# (data/djf, outputs/djf) — que continua intacto para comparação.
+#
+# Por que (medido em 2026-11-18):
+#   - as linhas InSAR de 2018–2025 (NSIDC-0498, ESA CCI, S1 2025) ficam DENTRO do apoiado do
+#     BedMachine: mediana 1–2 km, p90 4–6 km (Thwaites p90 5,5 km). Junto à linha do BedMachine o
+#     gelo já flutua em boa parte; encolher o buffer a partir dela incluiria gelo flutuante;
+#   - a flexão de maré (NSIDC-0778, p95 Up–Dn) tem 1,2–3,4 km por geleira, não 1–10 km.
+# Regra (thwaites.qc.grounded_mask.recent_gl_margin): o ponto apoiado entra se estiver a ≥ W da
+# borda flutuante do BedMachine e de qualquer linha de 2018+, e do lado de terra da linha recente
+# mais recuada nas vizinhanças; W = largura de flexão da geleira.
+#
+# Entrada: data/djf/interim/atl06_filtered.parquet (mesmo dado; passar --input absoluto).
+
+project:
+  experiment: "djf_glrecente"
+
+season:
+  name: "djf_glrecente"
+  months: [12, 1, 2]
+
+trend:
+  mk_variant: "seasonal"
+
+grounded:
+  boundary: "recent_gl"
+  gl_year_min: 2018
+  buffer_grounding_line_m: 0
+  # Lado de terra da flexão: distância limite Up (NSIDC-0778) -> LA (NSIDC-0498 2018–20) tem
+  # mediana 0,1–0,3 km (Crosson, Dotson, PIG, Thwaites); + 0,5 km de incerteza de posição das
+  # linhas InSAR -> 1 km. A largura Up–Dn inteira (1,2–3,4 km) inclui o lado flutuante.
+  gl_landward_width_m: 1000

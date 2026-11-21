@@ -1,0 +1,33 @@
+{
+  "n_nodes": 8695,
+  "class_counts": {
+    "adelgaçamento_significativo_fluxo_lento": 3407,
+    "adelgaçamento_significativo_fluxo_rapido": 2643,
+    "estavel_conjunto": 1949,
+    "inconclusivo": 494,
+    "sem_tendencia_mas_fluxo_rapido": 202
+  },
+  "velocity_epoch": "MEaSUREs NSIDC-0754 (1996-2018); dh/dt 2019-2025",
+  "acceleration_status": "Aceleração de fluxo NÃO pode ser derivada de um mosaico único de velocidade (§7.2). Uma composição média caracteriza o regime dinâmico, mas afirmar aceleração exige múltiplas épocas comparáveis com o período do dh/dt (2019–2025).",
+  "assoc_dhdt_speed": {
+    "n": 8656,
+    "n_effective": 5.340913282634949,
+    "spearman_r": -0.6183844870536558,
+    "p_naive": 0.0,
+    "p_autocorr_corrected": 0.2370187214283586,
+    "significant_naive": true,
+    "significant_corrected": false,
+    "correlation_length_m": 154400.0
+  },
+  "assoc_dhdt_dist_gl": {
+    "n": 8695,
+    "n_effective": 5.340913282634949,
+    "spearman_r": 0.056928819542453386,
+    "p_naive": 1.0843721635352939e-07,
+    "p_autocorr_corrected": 0.9229389553757011,
+    "significant_naive": true,
+    "significant_corrected": false,
+    "correlation_length_m": 154400.0
+  },
+  "n_possible_precursor": 202
+}

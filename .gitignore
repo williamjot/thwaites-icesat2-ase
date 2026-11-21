@@ -1,0 +1,56 @@
+# Dados brutos, intermediários pesados e logs
+data/
+outputs/
+logs/
+tmp/
+raw_temp/
+
+# Produtos binários, rasters e imagens avulsas
+*.h5
+*.nc
+*.tif
+*.tiff
+*.parquet
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+*.jfif
+*.webp
+*.gif
+*.pdf
+*.svg
+!docs/arquitetura_pipeline.svg
+*.ppt
+*.pptx
+*.zip
+
+# Rascunhos de manuscrito e apresentações
+manuscrito/
+latex/
+poster/
+
+# Ambientes Python, caches e artefatos de build
+**/__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+.venv/
+venv/
+
+# Configuração local e editores
+.env
+.env.*
+*.log
+.vscode/
+.idea/
+*.swp
+*.swo

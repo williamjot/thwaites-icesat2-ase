@@ -1,0 +1,120 @@
+{
+  "estacao": "jja",
+  "season": "JJA",
+  "correcao": "temporada como unidade; DJF = dez(Y) + jan/fev(Y+1), rotulada pelo ano final; conversao por ano juliano ATLAS",
+  "n_nos_completos": 7068,
+  "area_km2": 176700.0,
+  "densidade_gelo": 917.0,
+  "span_epocas_anos": 5.998771414661178,
+  "taxa_Gt_por_ano_ajuste_linear": -91.62692733753356,
+  "serie": [
+    {
+      "temporada": 2019,
+      "rotulo": "JJA 2019",
+      "epoca_media": 2019.5389890386457,
+      "dh_medio_m": 0.0,
+      "dh_mediano_m": 0.0,
+      "mwe": 0.0,
+      "massa_acumulada_Gt": 0.0,
+      "n_nos": 7068
+    },
+    {
+      "temporada": 2020,
+      "rotulo": "JJA 2020",
+      "epoca_media": 2020.5443355957427,
+      "dh_medio_m": -0.13554253287430934,
+      "dh_mediano_m": -0.018032632768154144,
+      "mwe": -0.12429250264574167,
+      "massa_acumulada_Gt": -21.96248521750255,
+      "n_nos": 7068
+    },
+    {
+      "temporada": 2021,
+      "rotulo": "JJA 2021",
+      "epoca_media": 2021.538010129012,
+      "dh_medio_m": -1.0322147269039448,
+      "dh_mediano_m": -0.4397095013409853,
+      "mwe": -0.9465409045709174,
+      "massa_acumulada_Gt": -167.2537778376811,
+      "n_nos": 7068
+    },
+    {
+      "temporada": 2022,
+      "rotulo": "JJA 2022",
+      "epoca_media": 2022.5130443166493,
+      "dh_medio_m": -1.5999912015861706,
+      "dh_mediano_m": -0.7407219484448433,
+      "mwe": -1.4671919318545183,
+      "massa_acumulada_Gt": -259.2528143586934,
+      "n_nos": 7068
+    },
+    {
+      "temporada": 2023,
+      "rotulo": "JJA 2023",
+      "epoca_media": 2023.5631187994995,
+      "dh_medio_m": -2.3603646310677604,
+      "dh_mediano_m": -1.2174905836582184,
+      "mwe": -2.1644543666891365,
+      "massa_acumulada_Gt": -382.4590865939703,
+      "n_nos": 7068
+    },
+    {
+      "temporada": 2024,
+      "rotulo": "JJA 2024",
+      "epoca_media": 2024.5820168886617,
+      "dh_medio_m": -2.756814982418278,
+      "dh_mediano_m": -1.360570764169097,
+      "mwe": -2.527999338877561,
+      "massa_acumulada_Gt": -446.69748317966514,
+      "n_nos": 7068
+    },
+    {
+      "temporada": 2025,
+      "rotulo": "JJA 2025",
+      "epoca_media": 2025.5377604533069,
+      "dh_medio_m": -3.10449534962438,
+      "dh_mediano_m": -1.5315943704918027,
+      "mwe": -2.846822235605557,
+      "massa_acumulada_Gt": -503.0334890315018,
+      "n_nos": 7068
+    }
+  ],
+  "cobertura_por_temporada": [
+    {
+      "temporada": 2019,
+      "n_nos": 123,
+      "epoca_media": 2019.5391492926753
+    },
+    {
+      "temporada": 2020,
+      "n_nos": 123,
+      "epoca_media": 2020.5441919445832
+    },
+    {
+      "temporada": 2021,
+      "n_nos": 123,
+      "epoca_media": 2021.5377706621348
+    },
+    {
+      "temporada": 2022,
+      "n_nos": 123,
+      "epoca_media": 2022.5127829586602
+    },
+    {
+      "temporada": 2023,
+      "n_nos": 123,
+      "epoca_media": 2023.5634023312844
+    },
+    {
+      "temporada": 2024,
+      "n_nos": 122,
+      "epoca_media": 2024.582094284295
+    },
+    {
+      "temporada": 2025,
+      "n_nos": 123,
+      "epoca_media": 2025.5384231859346
+    }
+  ],
+  "nota": "massa INFERIDA de altura x densidade suposta; anomalia relativa a primeira temporada de cada no; agregacao pela MEDIA"
+}

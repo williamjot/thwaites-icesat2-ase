@@ -1,0 +1,22 @@
+{
+  "n_cells": 8026,
+  "cell_area_km2": 25.0,
+  "area_total_km2": 200650.0,
+  "correlation_length_m": 34100.0,
+  "dhdt_mean_m_yr": -0.5730751202755731,
+  "dVdt_m3_yr": -114987522883.29375,
+  "dMdt_Gt_yr": -105.44355848398035,
+  "sle_mm_yr": 0.29144156573792246,
+  "ice_density": 917.0,
+  "sigma_dhdt_bar_m_yr": 0.3718299381950656,
+  "sigma_dMdt_Gt_yr_independent": 0.7636656854660501,
+  "sigma_dMdt_Gt_yr_correlated": 9.23129410175934,
+  "sigma_sle_mm_yr_independent": 0.0021107398713821174,
+  "sigma_sle_mm_yr_correlated": 0.025514909070644944,
+  "inflation_factor": 12.08813526317562,
+  "sigma_from_input_nodes_m_yr": 0.36826581956221516,
+  "sigma_from_interp_m_yr": 0.05135941082524481,
+  "input_grid": "D:\\WILLIAM\\ARTIGO PIBIC ANTARTICA\\outputs\\djf\\experiments\\djf_20260804T091211Z_firn\\firn_corrected_grid.parquet",
+  "value_column": "dhdt_ice",
+  "product_status": "firn_corrected"
+}

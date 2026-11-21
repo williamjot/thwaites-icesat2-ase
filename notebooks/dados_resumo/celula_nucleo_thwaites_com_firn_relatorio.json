@@ -1,0 +1,84 @@
+{
+ "celula": {
+  "x": -1547500.0,
+  "y": -412500.0,
+  "lon": -104.92565591324866,
+  "lat": -75.33733888763932
+ },
+ "com_firn": true,
+ "join_nao_verificado_aceito": true,
+ "grandeza": "h - FAC (espessura gelo-equivalente)",
+ "grandeza_simbolo": "h - FAC",
+ "janelas": [
+  "JJA 2019",
+  "DJF 2019/2020",
+  "JJA 2020",
+  "DJF 2020/2021",
+  "JJA 2021",
+  "DJF 2021/2022",
+  "JJA 2022",
+  "DJF 2022/2023",
+  "JJA 2023"
+ ],
+ "Gt_por_metro": 0.022925,
+ "audit_qc": {
+  "linhas_na_celula": 16666,
+  "linhas_nas_janelas": 10064,
+  "bm_mask_contagem": {
+   "2": 10064
+  },
+  "linhas_aterradas": 10064,
+  "granulos_join_nao_verificado_aceitos": [
+   "ATL06_20210820212049_08891212_007_01.parquet",
+   "ATL06_20220626172636_00731610_007_01.parquet",
+   "ATL06_20230625000521_00732010_007_01.parquet"
+  ],
+  "linhas_de_join_nao_verificado": 418,
+  "rej_granulo_sem_join": 0,
+  "rej_full": 0,
+  "s_elv_acima_1e30_apos_full": 0,
+  "rej_qc": 636,
+  "rej_rema": 0,
+  "obs_sem_suporte_de_FAC": 0,
+  "rej_fac_sem_suporte": 0,
+  "observacoes_finais": 9428,
+  "fac_vizinho_mais_proximo_km": 16.436735083792176
+ },
+ "tendencia": {
+  "method": "Theil-Sen; Monte Carlo parametrico condicional a sigma_h_ice",
+  "n_windows": 9,
+  "time_span_years": 3.9860991315977117,
+  "slope_m_per_year": -4.044974644183205,
+  "slope_sigma_m_per_year": 0.24874361977803316,
+  "slope_ci95_low": -4.515023297667683,
+  "slope_ci95_high": -3.5439977227640473,
+  "slope_p_two_sided": 0.0,
+  "intercept_at_mean_time": -30.822338174517107,
+  "t_reference": 2021.557680550432,
+  "interannual_thinning_supported": true,
+  "JJA_minus_DJF_detrended_m": 0.49028058438180366,
+  "JJA_minus_DJF_sigma_m": 0.6920816163645541,
+  "JJA_minus_DJF_ci95_low": -1.2562325040332574,
+  "JJA_minus_DJF_ci95_high": 1.4987758257705457,
+  "consecutive_signs_repeat": false,
+  "all_consecutive_differences_exceed_1sigma": true,
+  "repeatable_seasonal_variability": false,
+  "jja_to_djf_deltas_m": [
+   -1.3179966572451356,
+   -2.010042104370637,
+   -2.5555879548321236,
+   -2.294153743245488
+  ],
+  "djf_to_jja_deltas_m": [
+   -1.4581934427840224,
+   -2.214626666509808,
+   -1.479692677156585,
+   -2.3597198499916203
+  ]
+ },
+ "dM_dt_Gt_ano": -0.09273104371789999,
+ "sigma_dM_dt_Gt_ano": 0.00570244748341141,
+ "gia_mm_ano": 2.0658459951464843,
+ "fac_fonte": "basal_forcing\\imau_fdm_fac_ase_2018_2023.nc",
+ "comparacao_cadeia_tiles_sem_FAC": null
+}

@@ -1,0 +1,52 @@
+{
+  "fonte_gia": "Caron et al. (2018), GIA_maps_Caron_et_al_2018",
+  "referencia": "Caron, Ivins, Larour, Adhikari, Nilsson, Blewitt (2018), GRL 45, doi:10.1002/2017GL076644",
+  "vlm_na_roi_mm_ano": {
+    "mediana": 2.1715750370154296,
+    "p10": 1.3122675115788511,
+    "p90": 3.9441206569817284,
+    "sigma_mediano": 0.7457710309605106
+  },
+  "antes_sem_gia": {
+    "dMdt_Gt_yr": -103.45396581391974,
+    "sle_mm_yr": 0.28594241518496333,
+    "dhdt_mean_m_yr": -0.5622618845019757,
+    "sigma_dMdt_Gt_yr_correlated": 9.23129410175934,
+    "area_total_km2": 200650.0
+  },
+  "depois_com_gia": {
+    "dMdt_Gt_yr": -103.8989920437605,
+    "sle_mm_yr": 0.2871724489877294,
+    "dhdt_mean_m_yr": -0.5646805572389216,
+    "sigma_dMdt_Gt_yr_correlated": 9.23129410175934,
+    "area_total_km2": 200650.0
+  },
+  "efeito_da_correcao_Gt_ano": -0.4450262298407637,
+  "incerteza": {
+    "sigma_altimetria_Gt_ano": 9.23129410175934,
+    "sigma_gia_Gt_ano": 0.15937743209149194,
+    "sigma_total_Gt_ano": 9.232669817503323,
+    "nota_sigma_gia": "tratada como TOTALMENTE CORRELACIONADA sobre a ROI — o σ do Caron vem de dispersão de ensemble sobre parâmetros globais, então células vizinhas erram JUNTAS; dividir por sqrt(N) seria erro grosseiro",
+    "comprimento_correlacao_altimetria_m": 34100.0
+  },
+  "resultado": {
+    "dMdt_Gt_ano": -103.8989920437605,
+    "sigma_Gt_ano": 9.232669817503323,
+    "sle_mm_ano": 0.2871724489877294
+  },
+  "sensibilidade_estrutural": {
+    "pergunta": "o σ do ensemble do Caron cobre a discrepância com o GPS do ASE?",
+    "vlm_caron_mediano_mm_ano": 2.1715750370154296,
+    "vlm_caron_sigma_mediano_mm_ano": 0.7457710309605106,
+    "vlm_barletta_gps_ase_mm_ano": 41.0,
+    "razao": 18.88030544703148,
+    "efeito_na_massa_caron_Gt_ano": -0.39956122908944286,
+    "efeito_na_massa_escala_barletta_Gt_ano": -7.54383805,
+    "conclusao": "NÃO. A discrepância entre o Caron e o GPS é de mais de uma ordem de grandeza, enquanto o σ do ensemble do Caron é de décimos de mm/ano. A incerteza do GIA nesta região é ESTRUTURAL (escolha de modelo/reologia), não interna. Reportar só o σ do Caron subestima a incerteza real do GIA por um fator grande, e a correção aplicada aqui deve ser lida como PISO, não como valor definitivo. Barletta é valor de pico pontual e não é aplicável como campo — a faixa entre os dois é o que está genuinamente em aberto."
+  },
+  "limitacoes": [
+    "Caron é grau 89 (1°, ~28 km em lon e ~111 km em lat a 75°S) e vinculado globalmente: NÃO resolve a resposta de baixa viscosidade que Barletta et al. (2018) mediram no ASE (+41 mm/ano por GPS, manto 4e18 Pa·s). A correção aqui é portanto conservadora e a perda corrigida é LIMITE INFERIOR da perda real.",
+    "a correção é aplicada à grade interpolada, não aos pontos ATL06; isso é exato em primeira ordem porque dB/dt é suave em 1°, mas significa que o produto de NÓS não carrega a correção",
+    "a densidade do gelo (917 kg/m³) continua sendo erro sistemático não propagado"
+  ]
+}

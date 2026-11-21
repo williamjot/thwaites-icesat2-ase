@@ -1,0 +1,88 @@
+{
+  "n_nodes": 8695,
+  "janela_fase_observada": [
+    0.4142982630426104,
+    0.6659444558033556
+  ],
+  "teste_1_aliasing_harmonico": {
+    "pergunta": "quanto de um ciclo sazonal ESTACIONÁRIO vaza para a tendência, dada a amostragem real?",
+    "unidade_R": "(m/ano) por metro de amplitude do sinal periódico",
+    "vazamento": {
+      "R_anual_jja": {
+        "mediana": 0.055085145475548034,
+        "p90": 0.132855727408715,
+        "p99": 0.22865880272758174,
+        "max": 4.450110633434633
+      },
+      "R_anual_fullyear": {
+        "mediana": 0.13691659557921362,
+        "p90": 0.22618377988355723,
+        "p99": 0.35888017594882804,
+        "max": 12.989773811474986
+      },
+      "R_semianual_jja": {
+        "mediana": 0.10233924507600758,
+        "p90": 0.21575724192494272,
+        "p99": 0.37086397872780774,
+        "max": 22.872564295390486
+      },
+      "R_semianual_fullyear": {
+        "mediana": 0.12279067232181344,
+        "p90": 0.2520219737365095,
+        "p99": 0.45044551387767084,
+        "max": 15.02201532289099
+      }
+    },
+    "amplitude_sazonal_fdm": {
+      "mediana_m": 0.1272939441053284,
+      "p10_m": 0.057038306772125645,
+      "p90_m": 0.2790153040197186,
+      "n_celulas": 3378,
+      "cobertura": "2019.007-2022.484"
+    }
+  },
+  "teste_2_jja_vs_anual": {
+    "pergunta": "a tendência estimada só em JJA difere da do ano inteiro? — a hipótese do CLAUDE.md, testada no h_a do GSFC-FDM, que tem cobertura anual",
+    "sinal": "diff = slope_jja − slope_anual; POSITIVO = JJA menos negativo = subestima a perda = 'conservador'",
+    "escopo": "vale para a componente firn+SMB da altura; a componente dinâmica não é modelada pelo FDM",
+    "resultado": {
+      "n_celulas": 3378,
+      "n_celulas_descartadas": 1176,
+      "n_epocas_anual": 219,
+      "n_epocas_jja": 57,
+      "anos": [
+        2019.0,
+        2022.0
+      ],
+      "janela_fase": [
+        0.4142982630426104,
+        0.6659444558033556
+      ],
+      "slope_anual_mediana": 0.14631846899683948,
+      "slope_jja_mediana": 0.1132217118125406,
+      "diff_mediana": -0.027140718454512096,
+      "diff_p10": -0.08902987790302737,
+      "diff_p90": -0.008180379319315508,
+      "frac_celulas_jja_conservador": 0.03996447602131439
+    }
+  },
+  "vies_estimado_m_por_ano": {
+    "anual": {
+      "jja_pior_caso": 0.007012005429198295,
+      "jja_rms_fase": 0.004958236588703002,
+      "contrafactual_espalhado_pior_caso": 0.017428653464752274
+    },
+    "semianual": {
+      "jja_pior_caso": 0.013027166142486815,
+      "jja_rms_fase": 0.009211597518996225,
+      "contrafactual_espalhado_pior_caso": 0.015630508979188617
+    }
+  },
+  "nota_escala": "viés = R × amplitude sazonal mediana (0.127 m, GSFC-FDM h_a). A amplitude do FDM cobre 2019-06/2022; os anos 2022-2025 do nosso período NÃO estão nela.",
+  "limitacoes": [
+    "NÃO ler 'contrafactual_espalhado' como 'amostragem de ano completo é pior'. O remapeamento preserva a estrutura de RAJADA das passagens e só a estica sobre o ano: cada ano passa a ter ~3 rajadas isoladas em fases diferentes, que não se cancelam. Amostragem anual densa e uniforme cancelaria o harmônico e vazaria MENOS. O número serve para mostrar que a janela estreita de JJA congela a fase — não para comparar qualidade de amostragem.",
+    "a amplitude sazonal vem do GSFC-FDM (firn+SMB) e não inclui variação sazonal de origem dinâmica",
+    "no teste 1 a amplitude é constante no tempo; amplitude que varia entre anos produz vazamento adicional — é o teste 2 que captura isso",
+    "o teste 2 cobre 3 anos completos do FDM (2019-2021); o nosso período vai a 2025"
+  ]
+}

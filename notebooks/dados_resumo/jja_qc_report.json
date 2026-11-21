@@ -1,0 +1,108 @@
+{
+  "mascara": {
+    "fonte": "BedMachine Antarctica v4, variável 'mask', 500 m, EPSG:3031",
+    "classe_alvo": "2 (grounded_ice)",
+    "buffer_grounding_line_m": 5000.0,
+    "buffer_coast_m": 2000.0,
+    "min_grounded_fraction": 0.5,
+    "search_radius_m": 15000.0,
+    "area_analisavel_km2": 350309.0,
+    "area_analisavel_pct_janela": 60.31685768092547
+  },
+  "nos": {
+    "antes": 8695,
+    "depois": 7231,
+    "removidos": 1464,
+    "classes_antes": {
+      "ocean": 266,
+      "ice_free_land": 8,
+      "grounded_ice": 7891,
+      "floating_ice": 530
+    },
+    "motivo_remocao": {
+      "fora_de_grounded_ice": 804,
+      "dentro_buffer_costa": 245,
+      "dentro_buffer_grounding_line": 261,
+      "fracao_aterrada_insuficiente": 154
+    }
+  },
+  "confiabilidade": {
+    "criteria": {
+      "confiavel": {
+        "min_obs": 5000,
+        "min_years": 5,
+        "max_rmse_m": 1.0,
+        "max_sigma_m_yr": 0.15,
+        "min_snr": 2.0,
+        "min_tspan_yr": 4.0
+      },
+      "aceitavel": {
+        "min_obs": 500,
+        "min_years": 4,
+        "max_rmse_m": 2.5,
+        "max_sigma_m_yr": 0.5,
+        "min_snr": 0.0,
+        "min_tspan_yr": 3.0
+      }
+    },
+    "n_total": 7231,
+    "uses_real_year_count": true,
+    "classes": {
+      "confiável": {
+        "n": 4585,
+        "pct": 63.40755082284608,
+        "dhdt_median": -0.3385037861240739,
+        "dhdt_mean": -0.4980159288215085,
+        "nobs_median": 175685.0,
+        "rmse_median": 0.2967338814947794,
+        "sigma_median": 0.04655990903256126,
+        "snr_median": 7.904876246044342,
+        "thinning_pct": 95.28898582333697
+      },
+      "aceitável com ressalvas": {
+        "n": 2607,
+        "pct": 36.05310468814825,
+        "dhdt_median": -0.09565944979340904,
+        "dhdt_mean": -0.7489121406034569,
+        "nobs_median": 142150.0,
+        "rmse_median": 0.5024914369745122,
+        "sigma_median": 0.11858700431208223,
+        "snr_median": 1.75146549592176,
+        "thinning_pct": 78.1741465285769
+      },
+      "não confiável": {
+        "n": 39,
+        "pct": 0.53934448900567,
+        "dhdt_median": -1.6376846457972825,
+        "dhdt_mean": -1.379678080906788,
+        "nobs_median": 59508.0,
+        "rmse_median": 1.869157868996102,
+        "sigma_median": 0.5301110708655231,
+        "snr_median": 3.381399838863539,
+        "thinning_pct": 97.43589743589743
+      }
+    }
+  },
+  "comparacao_antes_depois": [
+    {
+      "conjunto": "antigo (máscara larga)",
+      "n_nos": 9811,
+      "dhdt_mediana": -0.26844163491894074,
+      "dhdt_media": -0.5383786195990907,
+      "afinando_pct": 83.57965548873713,
+      "sigma_mediano": 0.06898537606712463,
+      "rmse_mediano": 0.4449386371532704,
+      "nobs_mediano": 155818.0
+    },
+    {
+      "conjunto": "novo (máscara de gelo aterrado)",
+      "n_nos": 7231,
+      "dhdt_mediana": -0.3081452497062197,
+      "dhdt_media": -0.5932269989427733,
+      "afinando_pct": 89.13013414465496,
+      "sigma_mediano": 0.05720292499853714,
+      "rmse_mediano": 0.3390598628149427,
+      "nobs_mediano": 163178.0
+    }
+  ]
+}

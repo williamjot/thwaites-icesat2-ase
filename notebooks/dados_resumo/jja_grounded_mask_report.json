@@ -1,0 +1,25 @@
+{
+  "input": "atl06_filtered.parquet",
+  "output": "atl06_grounded.parquet",
+  "buffer_grounding_line_m": 5000.0,
+  "buffer_coast_m": 2000.0,
+  "n_in": 49957847,
+  "n_out": 42795748,
+  "n_removed": 7162099,
+  "pct_removed": 14.336284347882327,
+  "removed_by_reason": {
+    "not_grounded_ice": 4793923,
+    "within_coast_buffer": 1091075,
+    "within_grounding_line_buffer": 1277101
+  },
+  "by_class_before": {
+    "ice_free_land": 25732,
+    "grounded_ice": 45163924,
+    "floating_ice": 4768191
+  },
+  "by_class_after": {
+    "grounded_ice": 42795748
+  },
+  "mask_source": "BedMachine Antarctica v4, variável 'mask', 500 m, EPSG:3031",
+  "criterion": "mask==2 (grounded_ice) AND dist(não-aterrado)>=buffer_coast AND dist(plataforma)>=buffer_grounding_line"
+}

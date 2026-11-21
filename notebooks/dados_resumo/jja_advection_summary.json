@@ -1,0 +1,16 @@
+{
+  "smooth_km": 5.0,
+  "n_valid": 11602,
+  "adv_median_m_yr": -0.15354152378763952,
+  "adv_abs_median_m_yr": 0.161212992402945,
+  "adv_p90_abs_m_yr": 1.8949428959926988,
+  "speed_median_m_yr": 44.052531700642554,
+  "slope_median": 0.004532414054486087,
+  "n_cells": 8881,
+  "dhdt_eulerian_median": -0.30351288510780605,
+  "dhdt_lagrangian_median": -0.6201606182916187,
+  "advection_median": -0.21827004440482464,
+  "abs_advection_over_abs_dhdt": 0.7194609452170723,
+  "sensitivity_ratio": 1.098431154359491,
+  "scope_note": "NAO aplicar ao balanco de massa Euleriano — div(H*v) ja contem a adveccao (contagem dupla)"
+}

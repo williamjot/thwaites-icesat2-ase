@@ -1,0 +1,23 @@
+geleira,hipotese,sensor,desvio_m
+Pine Island,H1 Sentinel-1 comum,CSK,205.93877294436936
+Pine Island,H1 Sentinel-1 comum,ICEYE,-1393.9184911298616
+Pine Island,H2 CSK = ICEYE,Sentinel-1,403.02962279455915
+Pine Island,H2 CSK = ICEYE,Sentinel-1 (Andersen 2025),660.206448450143
+Pine Island,H2 CSK = ICEYE,Sentinel-1 (CCI),-39.39454867817648
+Smith-Pope-Kohler,H1 Sentinel-1 comum,ALOS-2,616.8164607788682
+Smith-Pope-Kohler,H1 Sentinel-1 comum,CSK,-749.8073604593894
+Smith-Pope-Kohler,H1 Sentinel-1 comum,SAOCOM,269.1446699889512
+Smith-Pope-Kohler,H2 CSK = ICEYE,ALOS-2,1223.1486452572767
+Smith-Pope-Kohler,H2 CSK = ICEYE,SAOCOM,740.7455260898603
+Smith-Pope-Kohler,H2 CSK = ICEYE,Sentinel-1,-169.16074632611299
+Smith-Pope-Kohler,H2 CSK = ICEYE,Sentinel-1 (Andersen 2025),370.86231473229
+Smith-Pope-Kohler,H2 CSK = ICEYE,Sentinel-1 (CCI),711.9697466869279
+Thwaites,H1 Sentinel-1 comum,CSK,195.54873118467157
+Thwaites,H1 Sentinel-1 comum,ICEYE,847.1171119009946
+Thwaites,H1 Sentinel-1 comum,RCM,372.0429965322135
+Thwaites,H1 Sentinel-1 comum,SAOCOM,1062.8975106105418
+Thwaites,H2 CSK = ICEYE,RCM,375.34591649060417
+Thwaites,H2 CSK = ICEYE,SAOCOM,1018.6592205009848
+Thwaites,H2 CSK = ICEYE,Sentinel-1,524.6328147014931
+Thwaites,H2 CSK = ICEYE,Sentinel-1 (Andersen 2025),315.45454523357216
+Thwaites,H2 CSK = ICEYE,Sentinel-1 (CCI),-608.9941570385554

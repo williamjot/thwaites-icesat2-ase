@@ -1,0 +1,93 @@
+{
+ "celula": {
+  "x": -1547500.0,
+  "y": -412500.0,
+  "lon": -104.92565591324866,
+  "lat": -75.33733888763932
+ },
+ "com_firn": false,
+ "join_nao_verificado_aceito": true,
+ "grandeza": "h (elevacao de superficie, sem desconto de firn)",
+ "grandeza_simbolo": "h",
+ "janelas": [
+  "JJA 2019",
+  "DJF 2019/2020",
+  "JJA 2020",
+  "DJF 2020/2021",
+  "JJA 2021",
+  "DJF 2021/2022",
+  "JJA 2022",
+  "DJF 2022/2023",
+  "JJA 2023",
+  "DJF 2023/2024",
+  "JJA 2024",
+  "DJF 2024/2025",
+  "JJA 2025"
+ ],
+ "Gt_por_metro": 0.022925,
+ "audit_qc": {
+  "linhas_na_celula": 16666,
+  "linhas_nas_janelas": 15176,
+  "bm_mask_contagem": {
+   "2": 15176
+  },
+  "linhas_aterradas": 15176,
+  "granulos_join_nao_verificado_aceitos": [
+   "ATL06_20210820212049_08891212_007_01.parquet",
+   "ATL06_20220626172636_00731610_007_01.parquet",
+   "ATL06_20230625000521_00732010_007_01.parquet"
+  ],
+  "linhas_de_join_nao_verificado": 418,
+  "rej_granulo_sem_join": 0,
+  "rej_full": 0,
+  "s_elv_acima_1e30_apos_full": 0,
+  "rej_qc": 719,
+  "rej_rema": 0,
+  "obs_sem_suporte_de_FAC": 4135,
+  "rej_fac_sem_suporte": 0,
+  "observacoes_finais": 14457,
+  "fac_vizinho_mais_proximo_km": 16.4139527076755
+ },
+ "tendencia": {
+  "method": "Theil-Sen; Monte Carlo parametrico condicional a sigma_h_ice",
+  "n_windows": 13,
+  "time_span_years": 5.9617080488501415,
+  "slope_m_per_year": -4.3455523117215105,
+  "slope_sigma_m_per_year": 0.10437561237205074,
+  "slope_ci95_low": -4.5107633760264845,
+  "slope_ci95_high": -4.103392244540321,
+  "slope_p_two_sided": 0.0,
+  "intercept_at_mean_time": -16.07443125570671,
+  "t_reference": 2022.5486903927913,
+  "interannual_thinning_supported": true,
+  "JJA_minus_DJF_detrended_m": 0.5814564487551301,
+  "JJA_minus_DJF_sigma_m": 0.3567213287720126,
+  "JJA_minus_DJF_ci95_low": -0.26588808583730045,
+  "JJA_minus_DJF_ci95_high": 1.1287690700595212,
+  "consecutive_signs_repeat": false,
+  "all_consecutive_differences_exceed_1sigma": true,
+  "repeatable_seasonal_variability": false,
+  "jja_to_djf_deltas_m": [
+   -1.13893701789996,
+   -2.289746689946252,
+   -2.671481536790102,
+   -2.4183303798713283,
+   -2.116658177063517,
+   -2.015255797176895
+  ],
+  "djf_to_jja_deltas_m": [
+   -0.9572089278161187,
+   -2.5000522727146155,
+   -1.5197113279188432,
+   -2.503182605515992,
+   -2.255616981294267,
+   -1.2622455825243328
+  ]
+ },
+ "dM_dt_Gt_ano": -0.09962178674621563,
+ "sigma_dM_dt_Gt_ano": 0.0023928109136292634,
+ "gia_mm_ano": 2.0658459951464843,
+ "fac_fonte": "basal_forcing\\imau_fdm_fac_ase_2018_2023.nc",
+ "comparacao_cadeia_tiles_sem_FAC": null,
+ "comparacao_com_firn": "Sobre 2019–2023, onde o firn existe, a tendência com desconto é −4.04 ± 0.25 m ano⁻¹, contra −4.33 m ano⁻¹ sem desconto nas mesmas janelas (9 temporadas)."
+}

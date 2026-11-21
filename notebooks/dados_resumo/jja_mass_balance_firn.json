@@ -1,0 +1,61 @@
+{
+  "raw": {
+    "n_cells": 8024,
+    "cell_area_km2": 25.0,
+    "area_total_km2": 200600.0,
+    "correlation_length_m": 154400.0,
+    "dhdt_mean_m_yr": -0.5985292255420074,
+    "dVdt_m3_yr": -120064962643.72667,
+    "dMdt_Gt_yr": -110.09957074429735,
+    "sle_mm_yr": 0.3043105880163,
+    "ice_density": 917.0,
+    "sigma_dhdt_bar_m_yr": 0.13110385813187242,
+    "sigma_dMdt_Gt_yr_independent": 0.2692280320361515,
+    "sigma_dMdt_Gt_yr_correlated": 14.735758815321399,
+    "sigma_sle_mm_yr_independent": 0.0007441349696963832,
+    "sigma_sle_mm_yr_correlated": 0.04072901828447042,
+    "inflation_factor": 54.73337491596234,
+    "sigma_from_input_nodes_m_yr": 0.12044092151408455,
+    "sigma_from_interp_m_yr": 0.051790018747826835
+  },
+  "firn_corrected": {
+    "n_cells": 8024,
+    "cell_area_km2": 25.0,
+    "area_total_km2": 200600.0,
+    "correlation_length_m": 154400.0,
+    "dhdt_mean_m_yr": -0.6093325408655538,
+    "dVdt_m3_yr": -122232107697.6301,
+    "dMdt_Gt_yr": -112.0868427587268,
+    "sle_mm_yr": 0.3098033243745904,
+    "ice_density": 917.0,
+    "sigma_dhdt_bar_m_yr": 0.13110385813187242,
+    "sigma_dMdt_Gt_yr_independent": 0.2692280320361515,
+    "sigma_dMdt_Gt_yr_correlated": 14.735758815321399,
+    "sigma_sle_mm_yr_independent": 0.0007441349696963832,
+    "sigma_sle_mm_yr_correlated": 0.04072901828447042,
+    "inflation_factor": 54.73337491596234,
+    "sigma_from_input_nodes_m_yr": 0.12044092151408455,
+    "sigma_from_interp_m_yr": 0.051790018747826835
+  },
+  "delta_Gt_yr": -1.9872720144294505,
+  "delta_percent": -1.8049770775626588,
+  "firn_info": {
+    "fac_variable": "FAC",
+    "n_epochs_used": 255,
+    "model_period": [
+      2019.0068359375,
+      2022.4835205078125
+    ],
+    "project_period": [
+      2019.0,
+      2026.0
+    ],
+    "temporal_coverage_frac": 0.49666922433035715,
+    "extrapolated": true,
+    "spatial_coverage_frac": 0.9988783649052841,
+    "dfac_dt_median": 0.01628644562079125,
+    "dhdt_raw_median": -0.29488628930239713,
+    "dhdt_ice_median": -0.3161187328064707
+  },
+  "epoch_note": "GSFC-FDM v1.2.1 (1980-06/2022); dh/dt 2019-2025"
+}

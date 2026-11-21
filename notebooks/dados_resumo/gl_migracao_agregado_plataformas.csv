@@ -1,0 +1,11 @@
+plataforma,grandeza,n,media_pond,sigma_pond,chi2_red,mediana,med_lo,med_hi,frac_neg
+Pine_Island,maré (m por m),2,,,,,,,
+Pine_Island,tempo (m/ano),6,-65.56426954946538,99.45693705532338,0.4325415685546498,-89.096226531756,-109.43463913798512,302.1332083515573,0.8333333333333334
+Thwaites,maré (m por m),0,,,,,,,
+Thwaites,tempo (m/ano),0,,,,,,,
+Crosson,maré (m por m),0,,,,,,,
+Crosson,tempo (m/ano),0,,,,,,,
+Dotson,maré (m por m),0,,,,,,,
+Dotson,tempo (m/ano),0,,,,,,,
+Cosgrove,maré (m por m),2,,,,,,,
+Cosgrove,tempo (m/ano),3,27.29418308952334,73.90434589610634,2.8734195495063452e-05,26.795248476902305,25.559025027739327,27.51178765655817,0.0

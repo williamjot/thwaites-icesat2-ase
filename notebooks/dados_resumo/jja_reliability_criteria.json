@@ -1,0 +1,18 @@
+{
+  "confiavel": {
+    "min_obs": 5000,
+    "min_years": 5,
+    "max_rmse_m": 1.0,
+    "max_sigma_m_yr": 0.15,
+    "min_snr": 2.0,
+    "min_tspan_yr": 4.0
+  },
+  "aceitavel": {
+    "min_obs": 500,
+    "min_years": 4,
+    "max_rmse_m": 2.5,
+    "max_sigma_m_yr": 0.5,
+    "min_snr": 0.0,
+    "min_tspan_yr": 3.0
+  }
+}
