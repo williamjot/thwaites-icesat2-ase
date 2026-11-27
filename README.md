@@ -27,7 +27,7 @@ Biblioteca científica e pipeline modular em Python para altimetria laser ICESat
 │   │   ├── time_series_tests.py     #   Teste Q/χ² de Cochran, diferença pré/pós, N_ef, substitutas de Fourier e ΔBIC
 │   │   └── spatial_cv.py            #   Spatial Block CV, calibração z_std, derivada gaussiana normalizada e Rolstad L
 │   ├── timeseries/                  # Ajuste nodal fitsec, seleção de aceleração, injeção harmônica de aliasing
-│   ├── interp/                      # Variograma empírico, krigagem ordinária, OI/Markov, IDW e kernels
+│   ├── interp/                      # Variograma empírico, krigagem ordinária, OI/Markov, IDW, kernels e cubos espaço-tempo
 │   ├── glaciology/                  # Advecção Lagrangiana, divergência de fluxo e forçantes basais
 │   ├── flexure/                     # Modelo analítico e diferenças finitas de viga elástica flutuante
 │   ├── uncertainty/                 # Calibração de geolocalização horizontal, correlação residual e balanço de massa
